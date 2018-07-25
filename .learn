@@ -1,8 +1,14 @@
 tags:
+<<<<<<< HEAD
   - react
   - async
   - fetch
   - gif
 languages:
   - javascript
+=======
+  - undefined
+languages:
+  - undefined
+>>>>>>> updated packages
 resources: 0
