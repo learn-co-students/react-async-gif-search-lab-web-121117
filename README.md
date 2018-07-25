@@ -57,13 +57,14 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 #### `<GifListContainer />`
 
-> A container does data fetching and then renders its corresponding sub-component. That’s it.
+> A container does data fetching and then renders its corresponding
+> sub-component. That’s it.
 
-- [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
-- [Presentational vs Container Componets](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) Dan Abramov
+- [Container Components][containers] Learn React with chantastic
+- [Presentational vs Container Components][presentationalvs] Dan Abramov
 
 In our app the `<GifListContainer />` will be responsible for fetching the data
-from the giphy api, storing the first 3 gifs from the response in it's component
+from the giphy API, storing the first 3 gifs from the response in it's component
 **state**, and passing that data down to it's child the `<GifList>` component as
 a prop.
 
@@ -90,3 +91,6 @@ is this callback function, defined in `<GifListContainer />`, that will actually
 query the api with the text the user has entered.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
+
+[containers]: https://medium.com/@learnreact/container-components-c0e67432e005
+[presentationalvs]: https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
