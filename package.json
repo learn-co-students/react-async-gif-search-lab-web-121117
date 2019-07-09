@@ -21,14 +21,6 @@
     "test:watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
   },
-  "babel": {
-    "presets": [
-      "airbnb",
-      "env",
-      "stage-0",
-      "react"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/learn-co-curriculum/react-async-gif-search-lab.git"
