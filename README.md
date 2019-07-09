@@ -46,7 +46,7 @@ containing information about a particular image.
 ```
 
 **Note:** Notice there are many URL keys on each image object. The first `url`
-key, just below `type`, `id`, and `slug` will bring you to the images page on [giphy.com][giphy.com]. We only want the path to the actual image, which found at `images.original.url`. Using other `url` keys may cause CORS issues.
+key, just below `type`, `id`, and `slug` will bring you to the images page on [giphy.com](giphy.com). We only want the path to the actual image, which found at `images.original.url`. Using other `url` keys may cause CORS issues.
 
 ### Your Components
 
@@ -76,7 +76,7 @@ as a prop.
 
 #### `<GifList />`
 
-`<GifList />` is a _presentational_ component. It receives data from it's props
+`<GifList />` is a _presentational_ component. It receives data from its props
 and renders html given the input data. It can render a top level `<ul>` with
 each gif as an `<li>`.
 
@@ -84,10 +84,10 @@ each gif as an `<li>`.
 
 The `<GifSearch />` component will render a form that receives the user input
 for the giphy search. The text input should be a _controlled component_ that
-stores the value of the input in it's component state and renders the DOM
+stores the value of the input in its component state and renders the DOM
 accordingly. The React component is always in charge of what the DOM looks like.
 
-`<GifSearch />` should receive a callback prop from it's parent. On a submit
+`<GifSearch />` should receive a callback prop from its parent. On a submit
 event, it should invoke that callback prop with the value of the text input. It
 is this callback function, defined in `<GifListContainer />`, that will actually
 query the api with the text the user has entered.
