@@ -5,7 +5,9 @@
 You're going to be building out a Gif search using the Giphy API. The URL for
 the API is
 
-`http://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
+```js
+`https://api.giphy.com/v1/gifs/search?q=${YOUR QUERY HERE}&api_key=dc6zaTOxFJmzC&rating=g`
+```
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
@@ -57,14 +59,15 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 #### `<GifListContainer />`
 
-> A container does data fetching and then renders its corresponding sub-component. That’s it.
+> A container does data fetching and then renders its corresponding
+> sub-component. That’s it.
 
-- [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
-- [Presentational vs Container Componets](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) Dan Abramov
+- [Container Components][containers] Learn React with chantastic
+- [Presentational vs Container Components][presentationalvs] Dan Abramov
 
 In our app the `<GifListContainer />` will be responsible for fetching the data
-from the giphy api, storing the first 3 gifs from the response in its component
-**state**, and passing that data down to its child, the `<GifList>` component, as
+from the giphy API, storing the first 3 gifs from the response in it's component
+**state**, and passing that data down to it's child the `<GifList>` component as
 a prop.
 
 It will also render a `<GifSearch />` component that renders the form.
@@ -90,3 +93,6 @@ is this callback function, defined in `<GifListContainer />`, that will actually
 query the api with the text the user has entered.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
+
+[containers]: https://medium.com/@learnreact/container-components-c0e67432e005
+[presentationalvs]: https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
